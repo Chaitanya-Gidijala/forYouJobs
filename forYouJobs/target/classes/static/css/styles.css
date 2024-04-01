@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600')
+	;
+
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.dateTime {
+	justify-content: center;
+	text-align: center;
+	background-color: #303f42
+}
+
+#currentDateTime {
+	color: white;
+}
+/* Navigation Bar */
+.navbar {
+	background-color: #009980;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Space Mono", monospace;
+	color: #FFD700;
+}
+
+.navbar-brand:hover {
+	color: #FFE4B5;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 19px;
+	color: white
+}
+
+.nav-item {
+	padding: 7px;
+}
+
+.nav-link:hover {
+	color: #FFD700;
+}
+/*End of Navigation Bar */
+/* ============================================ */
+
+/* JOB LISt */
+.companyTitle a:hover {
+	color: #ff8000;
+}
+
+.job-count span:hover{
+	font-weight: 700;
+	color: #ff8000;
+	text-decoration: underline;
+}
+.img-job-span{
+}
+/* .card-img-top {
+	height: 10rem;
+	width: 16rem;
+	padding-left: 20px;
+} */
+/* END OF JOB LISt */
+/*  ========================================*/
+
+/* ADD JOB */
+.addForm {
+	display: flex; /* Use flexbox */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	
+}
+
+
+/* END OF ADD JOB */
+
+/* Job Details*/
+.post-visitor{
+	 text-align: right;
+}
+.job-details {
+	width: 60rem;
+	border: 0 solid black;
+}
+
+.companyTitle {
+	font-size: 20px
+}
+
+.date {
+	font-size: 15px
+}
+
+.title-description {
+	font-size: 14px;
+	font-weight: 200
+}
+
+.jobDetailTitle {
+	font-size: 30px;
+}
+
+.jobexplanation div p {
+	font-weight: 400;
+}
+
+.eligiblitiy {
+	font-weight: 400;
+	font-size: 20px
+}
+
+#splitTextContainer {
+	font-size: 17px;
+	font-weight: 200
+}
+
+.clickHere {
+	font-weight: 800;
+	font-size: 20px;
+	text-decoration: none;
+	color: red;
+}
+
+/* END of Job Details*/
+/*================================================  */
+.footer-brand {
+	color: #FFC300;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.footer-headings {
+	color: #FFC300;
+	font-weight: 800;
+	background-color: black;
+	padding: 14px;
+	width: 12rem;
+	border-radius: 1px;
+}
+
+.footer-values {
+	color: white;
+}
+
+/* FOOTER */
+
+/* END OF FOOTER */
