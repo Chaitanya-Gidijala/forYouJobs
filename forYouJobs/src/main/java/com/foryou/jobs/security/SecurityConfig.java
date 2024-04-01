@@ -36,7 +36,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests(configurer ->
                         configurer
                     		    .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
-                    		    .requestMatchers("/","/category/{category}","/index").permitAll()
+                    		    .requestMatchers("/","/category/{category}","/{jobTitle}","/index").permitAll()
                                 
                                 .requestMatchers("/admin/add-job","/forYouJobs/src/main/resources/templates/**").hasRole("ADMIN")
 
