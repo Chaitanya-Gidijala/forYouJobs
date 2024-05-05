@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+    <h2>User Form</h2>
+    <form th:action="@{/save-user}" th:object="${user}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="email" id="username" th:field="*{email}" required>
+        <button type="submit">Submit</button>
+    </form>
+	
+	<br><br><br>
+	<div>
+		<span>Click here to send mails for all users: ----></span>
+		<a th:href="@{/send-emails}">click me</a>
+	</div>
+</body>
+</html>
