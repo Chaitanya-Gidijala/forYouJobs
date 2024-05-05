@@ -1,0 +1,86 @@
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/index :: head}"></head>
+
+
+<body>
+	<div th:replace="~{currentDateTime :: dateTime}"></div>
+
+	<header th:replace="~{fragments/index :: header}"></header>
+
+<div class="addForm bg-dark text-white" th:fragment="addForm">
+    
+		<form action="#" th:action="@{/save}" th:object="${jobDescription}" method="post"
+			 style="width: 30rem;" class="pt-5 mt-5 pb-5 form">
+			 <div class="card p-5">
+			 <div data-mdb-input-init class="form-outline mb-4 row">
+			 	<span for="category" class="col">Job Category</span>
+				<span class="col">
+					<select class="form-select"  name="category" aria-label="Default select example">
+						<option th:value="job-notifications" selected>Job Notification</option>
+						<option th:value="internships" value="1">Internship Notification</option>
+					</select>
+				</span>	
+			</div>		
+						
+								<!-- Name input -->
+				  <span data-mdb-input-init class="form-outline mb-4 row">
+				  		<span class="form-label col" for="form4Example1">Company Name:</span>
+						<span class="col">	
+							<input type="text" name="companyName" id="form4Example1" class="form-control" th:field="*{companyName}" required="required"/>
+						</span>
+				  </span>
+				  
+				
+				<span data-mdb-input-init class="form-outline mb-4 row">
+				 	<span class="form-label col" for="form4Example2">Company Image URL:</span>
+				 	<span class="col">
+				          <input type="text" name="companyImage" id="form4Example2" class="form-control"  th:field="*{companyImage}" required="required"/><br/>
+				  	</span>
+				 </span>
+				 
+				 
+				 <div data-mdb-input-init class="form-outline mb-4 row">
+				 	<span class="form-label col" for="form4Example2">Job Title:</span>
+					<span class="col">
+						<input type="text" name="jobTitle" id="jobTitle" class="form-control" th:field="*{jobTitle}" required="required"/><br/>
+				 	</span>
+				 </div>
+				
+				  <!-- Email input -->
+				 <div data-mdb-input-init class="form-outline mb-4 row">
+				 	<span class="form-label col" for="form4Example2">Date Posted:</span>
+				   	<span class="col">
+				           <input type="date" name="datePosted" id="datePosted" class="form-control"  th:field="*{datePosted}" required="required"/><br/>
+				 	</span>
+				 </div>
+				 
+				 
+				  <!-- Message input -->
+				<div data-mdb-input-init class="form-outline mb-4 row">
+					<span class="form-label col" for="form4Example3">Apply Link:</span>
+				  	<span class="col">
+				  		<input type="text" class="form-control" name="applyLink" id="form4Example3" th:field="*{applyLink}"></input>
+				  	</span>
+				</div>
+				
+				
+				 <div data-mdb-input-init class="form-outline mb-4 row">
+				 	<span class="form-label col" for="form4Example2">Job Description:</span>
+					<span class="col">
+				         <textarea type="text" name="jobDetails" id="jobDescription" rows="5" class="form-control"  th:field="*{jobDetails}" required="required"></textarea><br/>
+				 	</span>
+				 </div>
+				
+				
+				<button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+			</div>
+		
+		</form>
+</div>
+
+<nav th:replace="~{footer :: footer}"></nav>
+
+

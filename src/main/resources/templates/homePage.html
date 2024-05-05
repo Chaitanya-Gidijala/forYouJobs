@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/index :: head}"></head>
+
+
+<body>
+<div th:replace="~{currentDateTime :: dateTime}"></div>
+<nav th:replace="~{fragments/index :: header}"></nav>
+<nav th:replace="~{jobsList:: jobsList}"></nav>
+
+<div th:replace="~{footer :: footer}"></div>
+</body>
+</html>
