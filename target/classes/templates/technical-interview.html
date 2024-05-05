@@ -1,0 +1,48 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/index :: head}"></head>
+
+
+<body>
+	<div th:replace="~{currentDateTime :: dateTime}"></div>
+	<nav th:replace="~{fragments/index :: header}"></nav>
+
+	<div class="container pt-5">
+		<div>
+			<h2>Technical Interview Questions</h2>
+		</div>
+		<div class="pt-4">
+			<p>
+				In today’s job market, interviews have become more challenging with multiple rounds like group
+				discussions, HR interviews, and managerial interviews. One important round added to the process is the
+				technical interview.
+			</p>
+			<p>
+				The technical interview is especially important in the IT sector. It helps employers assess your skills and knowledge. Freshers should focus on their skills, projects, and internships as they provide valuable learning experiences.
+			</p>
+			<p>
+				Technical interview questions are logical and direct. For freshers, it can be overwhelming not knowing what kind of questions to expect or how to answer them. To help, here are some technical interview questions and answers specifically for freshers.
+			</p>
+		</div>
+		<div class="pt-4">
+			<h3>List of skills</h3>
+			<ul>
+				<li><a th:href="@{/technical-interview/java}">Java</a></li>
+				<li><a th:href="@{/technical-interview/spring-boot}">Spring Boot</a></li>
+				
+			
+			<li class="nav-item">
+			           <ul class="">
+				            <li><a class="" href="/interview-guidence/java.html">Java</a></li>
+				            <li><a class="" th:href="@{/technical-interview/springboot}">Spring Boot</a></li>
+				            <li><a class="" th:href="@{/technical-interview/hibernate}">Hibernate</a></li>
+				            <li><a class="" th:href="@{/technical-interview/java}">MYSQL</a></li>
+				            <li><a class="" th:href="@{/technical-interview/java}">Thymleaf</a></li>
+			           </ul>
+			         </li>
+				</ul>
+		</div>
+	</div>
+</body>
+
+</html>
